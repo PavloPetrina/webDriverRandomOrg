@@ -51,6 +51,8 @@ public class getRandomNumbers extends WebDriverSettings {
         driver.findElement(By.id("desktop-header-skip-to")).click();
         //Paste_numbs
         driver.findElement(By.xpath("/html/body/div[4]/main/div/div[2]/article/form/div/table/tbody/tr[2]/td/textarea")).sendKeys(copyText);
+        //Close_banner
+        driver.findElement(By.xpath("/html/body/div[8]/center/div/span")).click();
         //Calculate_SD
         driver.findElement(By.cssSelector("#calc-table > table > tbody > tr:nth-child(3) > td > button")).click();
         //Scroll_to_SD
