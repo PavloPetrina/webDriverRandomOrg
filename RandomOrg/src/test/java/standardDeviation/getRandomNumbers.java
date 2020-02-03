@@ -52,7 +52,7 @@ public class getRandomNumbers extends WebDriverSettings {
         //Paste_numbs
         driver.findElement(By.xpath("/html/body/div[4]/main/div/div[2]/article/form/div/table/tbody/tr[2]/td/textarea")).sendKeys(copyText);
         //Calculate_SD
-        driver.findElement(By.xpath("/html/body/div[4]/main/div/div[2]/article/form/div/table/tbody/tr[3]/td/button")).click();
+        driver.findElement(By.cssSelector("#calc-table > table > tbody > tr:nth-child(3) > td > button")).click();
         //Scroll_to_SD
         WebElement element = driver.findElement(By.xpath("/html/body/div[4]/main/div/div[2]/article/form/div/table/tbody/tr[11]/td/div[1]/div[3]/table[4]/tbody/tr[1]/th"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
